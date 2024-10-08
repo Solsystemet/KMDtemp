@@ -1,4 +1,4 @@
-import styles from "./Homepage.module.css";
+import styles from "./Buttons.module.css";
 import React from 'react';
 
 const FilledButton = ({children: text, color, backgroundColor, fontSize, onClick, border}) => {
