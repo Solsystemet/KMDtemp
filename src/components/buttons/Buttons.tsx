@@ -1,21 +1,20 @@
 import styles from "./Buttons.module.css";
-import React from 'react';
+import React, { CSSProperties, ReactNode } from "react";
 
-const FilledButton = ({children: text, color, backgroundColor, fontSize, onClick, border}) => {
-    return (
-        <button
-            style={{
-                color: color,
-                backgroundColor: backgroundColor,
-                fontSize: fontSize,
-                border: border,
-            }}
-            className={styles.filledButton}
-            onClick={onClick}
-        >
-            {text}
-        </button>
-    );
+const FilledButton = ({
+   children: text,
+   style,
+   onClick,
+}: {
+   children: ReactNode;
+   style: CSSProperties;
+   onClick: () => void;
+}) => {
+   return (
+      <button style={style} className={styles.filledButton} onClick={onClick}>
+         {text}
+      </button>
+   );
 };
 
 export default FilledButton;
