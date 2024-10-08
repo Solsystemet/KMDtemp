@@ -1,20 +1,16 @@
 import styles from "./Buttons.module.css";
-import React, { CSSProperties, ReactNode } from "react";
+import React from "react";
 
-const FilledButton = ({
-   children: text,
-   style,
-   onClick,
-}: {
-   children: ReactNode;
-   style: CSSProperties;
+type ButtonProps = {
+   children: React.ReactNode;
    onClick: () => void;
-}) => {
-   return (
-      <button style={style} className={styles.filledButton} onClick={onClick}>
-         {text}
-      </button>
-   );
+   style?: React.CSSProperties;
 };
 
-export default FilledButton;
+export function Button({ children, onClick, style }: ButtonProps) {
+   return (
+      <button style={style} className={styles.filledButton} onClick={onClick}>
+         {children}
+      </button>
+   );
+}
