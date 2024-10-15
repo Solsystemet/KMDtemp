@@ -3,7 +3,7 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { ProgressBar } from "../../components/progressBar/ProgressBar";
 
 
-export function Homepage(){
+export function HomepageTest(){
     return(
         <Button children={undefined} color={""} fontSize={""}/> 
     )
