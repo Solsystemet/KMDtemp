@@ -1,13 +1,18 @@
-.searchBar{
-    width: 100%;
+.Searchbar {
+    width: 100%; 
+    padding: 5px; 
+    font-size: 12px;
     border: none;
-    border-bottom: 4px solid #000;
-    font-size: 1.2rem;
-    border-radius: 16px 16px 0 0;
-    padding: 5px;
+    border-radius: 16px 16px 16px 16px;
+    outline: none;
+    transition: border-color 0.3s ease; 
 }
 
-.searchBar:focus{
-    outline: none;
-    border-bottom: 4px solid blue;
+.Searchbar:focus {
+    border-color: #1f614e; 
+    box-shadow: 0 0 5px #1f614e; 
+}
+
+.Searchbar::placeholder {
+    color: #aaa; 
 }

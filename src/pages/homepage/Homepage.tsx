@@ -7,11 +7,10 @@ import { Searchbar } from "../../components/searchbar/Searchbar";
 
 export function Homepage() {
    return (
-      <Searchbar value={""} searchHandler={function (): void {
+      <Searchbar value={"Thi is just as test to see if it adjusts"} searchHandler={function (): void {
          throw new Error("Function not implemented.");
       } } placeholder={"Type any text"}/>
    )
-  
 }
 
 export function Test() {
