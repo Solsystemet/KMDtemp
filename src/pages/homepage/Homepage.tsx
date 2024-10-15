@@ -1,24 +1,17 @@
+import { ChangeEvent } from "react";
 import { Button } from "../../components/buttons/Buttons";
 import { Navbar } from "../../components/navbar/Navbar";
 import { ProgressBar } from "../../components/progressBar/ProgressBar";
+import { Searchbar } from "../../components/searchbar/Searchbar";
 
 
-export function HomepageTest(){
-    return(
-        <Button children={undefined} color={""} fontSize={""}/> 
-    )
-}
 export function Homepage() {
    return (
-      <Button
-         children={undefined}
-         color={""}
-         fontSize={""}
-         onClick={function (): void {
-            throw new Error("Function not implemented.");
-         }}
-      />
-   );
+      <Searchbar value={""} searchHandler={function (): void {
+         throw new Error("Function not implemented.");
+      } } placeholder={"Type any text"}/>
+   )
+  
 }
 
 export function Test() {
