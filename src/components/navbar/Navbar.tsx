@@ -12,7 +12,7 @@ export function Navbar({ children }: NavbarProps) {
             <img src={imgKMD} alt="Logo" />
             {Children.map(children, child => (
                <div className={styles.menuButtonContainer}>
-                  <p>{child}</p>
+                  <p className={styles.text}>{child}</p>
                </div>
             ))}
          </div>
