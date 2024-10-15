@@ -7,7 +7,7 @@ type ButtonProps = {
    backgroundColor?: string;
    fontSize: string;
    border?: string;
-   onClick: () => void;
+   onClick?: () => void;
 };
 
 export function Button(props: ButtonProps) {
