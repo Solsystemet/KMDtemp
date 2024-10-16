@@ -12,14 +12,37 @@ type ButtonProps = {
 
 export function Button(props: ButtonProps) {
    return (
-      <button style={{
-         color: props.color,
-         backgroundColor:props.backgroundColor,
-         fontSize: props.fontSize,
-         border: props.border,
-      }
-         } className={styles.Button} onClick={props.onClick}>
+      <button
+         style={{
+            color: props.color,
+            backgroundColor: props.backgroundColor,
+            fontSize: props.fontSize,
+            border: props.border,
+         }}
+         className={styles.Button}
+         onClick={props.onClick}
+      >
          {props.children}
       </button>
+   );
+}
+
+type NavButtonProps = {
+   children: React.ReactNode;
+   fontSize: string;
+   color: string;
+   href?: string;
+};
+
+export function NavButton(props: NavButtonProps) {
+   return (
+      <div className={styles.navButton}>
+         <a
+            href={props.href}
+            style={{ fontSize: props.fontSize, color: props.color }}
+         >
+            {props.children}
+         </a>
+      </div>
    );
 }

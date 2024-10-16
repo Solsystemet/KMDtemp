@@ -1,8 +1,15 @@
 import styles from "./Navbar.module.css";
-import React, { ReactNode, Children } from "react";
+import React from "react";
 import imgKMD from "../../assets/imgKMD.svg";
+import { NavButton } from "../buttons/Buttons";
+
+type NavbarChild = {
+   url: string;
+   label: string;
+};
+
 type NavbarProps = {
-   children: ReactNode;
+   children: NavbarChild[];
 };
 
 export function Navbar({ children }: NavbarProps) {
@@ -10,9 +17,11 @@ export function Navbar({ children }: NavbarProps) {
       <nav>
          <div className={styles.contentContainer}>
             <img src={imgKMD} alt="Logo" />
-            {Children.map(children, child => (
-               <div className={styles.menuButtonContainer}>
-                  <p className={styles.text}>{child}</p>
+            {children.map((child, index) => (
+               <div key={index} className={styles.menuButtonContainer}>
+                  <NavButton fontSize={"1rem"} color={"white"} href={child.url}>
+                     {child.label}
+                  </NavButton>
                </div>
             ))}
          </div>

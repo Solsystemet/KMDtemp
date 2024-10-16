@@ -7,5 +7,13 @@ import { FileUpload } from "../../components/fileUpload/FileUpload";
 export function Homepage() {}
 
 export function Test() {
-   return <FileUpload />;
+   return (
+      <Navbar
+         children={[
+            { url: "/home", label: "Home" },
+            { url: "/about", label: "About" },
+            { url: "/contact", label: "Contact" },
+         ]}
+      />
+   );
 }
