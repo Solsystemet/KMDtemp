@@ -2,6 +2,10 @@
    max-width: 1280px;
 }
 
+* {
+   border: none;
+}
+
 :root {
    --primary-color: #020304;
    --secondary-color: #1f614e;

@@ -1,7 +1,7 @@
 import styles from "./Buttons.module.css";
 import React from "react";
 
-type ButtonProps = {
+type StandardButtonProps = {
    children: React.ReactNode;
    color: string;
    backgroundColor?: string;
@@ -10,7 +10,7 @@ type ButtonProps = {
    onClick?: () => void;
 };
 
-export function Button(props: ButtonProps) {
+export function StandardButton(props: StandardButtonProps) {
    return (
       <button
          style={{
@@ -19,7 +19,7 @@ export function Button(props: ButtonProps) {
             fontSize: props.fontSize,
             border: props.border,
          }}
-         className={styles.Button}
+         className={styles.standardButton}
          onClick={props.onClick}
       >
          {props.children}

@@ -1,3 +1,15 @@
+.standardButton {
+   background-color: var(--secondary-color);
+   padding: 0.5em 2em;
+   cursor: pointer;
+   transition: all 0.2s linear;
+   text-align: center;
+}
+
+.standardButton:hover {
+   transform: scale(1.05);
+}
+
 .navButton {
    cursor: pointer;
 }
