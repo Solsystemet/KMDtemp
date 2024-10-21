@@ -1,8 +1,7 @@
 import { Navbar } from "../../components/navbar/Navbar";
-import { PopUp } from "../../components/popup/Popup";
-export function Homepage() {}
+import { SelectForm } from "../../components/selectButton/SelectButton";
 
-export function Test() {
+export function Homepage() {
    return (
       <>
          <Navbar
@@ -12,6 +11,13 @@ export function Test() {
                { url: "/contact", label: "Contact" },
             ]}
          />
+
+         <SelectForm>
+            {"Option 1"}
+            {"Option 2"}
+            {"Option 3"}
+            {"Option 4"}
+         </SelectForm>
       </>
    );
 }
