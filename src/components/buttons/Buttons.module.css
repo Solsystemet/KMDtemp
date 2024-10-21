@@ -1,6 +1,6 @@
 .standardButton {
    background-color: var(--secondary-color);
-   padding: 0.5em 2em;
+   padding: 0.5em 1em;
    cursor: pointer;
    transition: all 0.2s linear;
    text-align: center;

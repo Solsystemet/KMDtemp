@@ -1,9 +1,5 @@
-import { ChangeEvent } from "react";
-import { StandardButton } from "../../components/buttons/Buttons";
 import { Navbar } from "../../components/navbar/Navbar";
-import { ProgressBar } from "../../components/progressBar/ProgressBar";
-import { Searchbar } from "../../components/searchbar/Searchbar";
-import { FileUpload } from "../../components/fileUpload/FileUpload";
+import { PopUp } from "../../components/popup/Popup";
 export function Homepage() {}
 
 export function Test() {
@@ -16,10 +12,6 @@ export function Test() {
                { url: "/contact", label: "Contact" },
             ]}
          />
-
-         <StandardButton color={""} fontSize={""}>
-            Hello
-         </StandardButton>
       </>
    );
 }
