@@ -1,5 +1,5 @@
 import { Navbar } from "../../components/navbar/Navbar";
-import { SelectForm } from "../../components/selectButton/SelectButton";
+import { MultipleSelect } from "../../components/multipleSelect/MultipleSelect";
 
 export function Homepage() {
    return (
@@ -12,12 +12,12 @@ export function Homepage() {
             ]}
          />
 
-         <SelectForm>
+         <MultipleSelect>
             {"Option 1"}
             {"Option 2"}
             {"Option 3"}
             {"Option 4"}
-         </SelectForm>
+         </MultipleSelect>
       </>
    );
 }
