@@ -2,20 +2,20 @@
 .searchbarWrapper {
     display: flex;
     width: 100%;
-    align-items: center;  /* Vertically aligns input and icon */
+    align-items: center;  
     border: 1px solid #ccc;
-    border-radius: 16px;  /* Unified border radius */
+    border-radius: 16px;  
     background-color: #eee;
   }
   
   .Searchbar {
-    flex-grow: 1;  /* Allows the input to take up remaining space */
+    flex-grow: 1;  
     padding: 8px 16px;
     font-size: 16px;
-    border: none;  /* Remove border from input */
-    border-radius: 16px 0 0 16px;  /* Rounded corners for input */
+    border: none;  
+    border-radius: 16px 0 0 16px;  
     outline: none;
-    background-color: transparent;  /* To inherit the wrapper background */
+    background-color: transparent;  
     color: black;
   }
   
@@ -24,11 +24,11 @@
   }
   
   .searchIcon {
-    display: flex;  /* To center the icon inside the box */
-    align-items: center;  /* Align the icon vertically in the container */
+    display: flex; 
+    align-items: center; 
     padding: 8px;
     background-color: #eee;
-    border-radius: 0px 16px 16px 0px;  /* Rounded corners for icon container */
+    border-radius: 0px 16px 16px 0px;  
     color: black;
   }
   

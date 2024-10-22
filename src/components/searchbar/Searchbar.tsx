@@ -1,6 +1,6 @@
 import React, { ChangeEventHandler } from "react";
 import styles from "./Searchbar.module.css";
-import { Search } from 'lucide-react';  // Importing Search icon
+import { Search } from 'lucide-react';  
 
 type SearchbarProps = {
   value: string;
@@ -10,16 +10,15 @@ type SearchbarProps = {
 
 export function Searchbar(props: SearchbarProps) {
   return (
-    <div className={styles.searchbarWrapper}> {/* Wrapper for flex alignment */}
+    <div className={styles.searchbarWrapper}> 
       <input
         type="text"
-        className={styles.Searchbar}  // Apply class for input only
+        className={styles.Searchbar}  
         placeholder={props.placeholder}
         value={props.value}
         onChange={props.searchHandler}
       />
-      <div className={styles.searchIcon}>  {/* Icon aligned next to input */}
-        <Search />
+      <div className={styles.searchIcon}> 
       </div>
     </div>
   );
