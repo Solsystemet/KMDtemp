@@ -1,6 +1,7 @@
 import { Navbar } from "../../components/navbar/Navbar";
 import { MultipleSelect } from "../../components/multipleSelect/MultipleSelect";
 import { RadioButtonSelect } from "../../components/radiobutton/Radiobutton";
+import { Search } from "../../components/searchbar/Search";
 
 export function Homepage() {
    return (
@@ -26,6 +27,7 @@ export function Homepage() {
             {"Option 3"}
          </RadioButtonSelect>
 
+         <Search/>
       </>
    );
 }

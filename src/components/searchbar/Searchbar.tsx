@@ -19,6 +19,7 @@ export function Searchbar(props: SearchbarProps) {
         onChange={props.searchHandler}
       />
       <div className={styles.searchIcon}> 
+        <Search size={20} />
       </div>
     </div>
   );
