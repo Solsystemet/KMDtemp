@@ -52,7 +52,7 @@ export function FileUpload() {
    });
 
    return (
-      <>
+      <div className={styles.fileUploadContainer}>
          <div {...getRootProps()} className={styles.dropZone}>
             <input {...getInputProps()} />
             {isDragActive ? (
@@ -61,21 +61,23 @@ export function FileUpload() {
                <p>Drag and drop the contact here, or click to select files</p>
             )}
          </div>
-
-         {selectedFile && (
-            <div className={styles.fileDetails}>
-               <div className={styles.picCircle}>
-                  <FileText size={"70%"} />
+         <div className={styles.fileDetailContainer}>
+            <h3>Uploaded files</h3>
+            {selectedFile && (
+               <div className={styles.fileDetails}>
+                  <div className={styles.picCircle}>
+                     <FileText size={"70%"} />
+                  </div>
+                  <p className={styles.fileName}>{selectedFile.name}</p>
+                  <div className={styles.progressBg}>
+                     <div
+                        className={styles.progress}
+                        style={{ width: `${progress}%` }}
+                     />
+                  </div>
                </div>
-               <p className={styles.fileName}>{selectedFile.name}</p>
-               <div className={styles.progressBg}>
-                  <div
-                     className={styles.progress}
-                     style={{ width: `${progress}%` }}
-                  />
-               </div>
-            </div>
-         )}
-      </>
+            )}
+         </div>
+      </div>
    );
 }
