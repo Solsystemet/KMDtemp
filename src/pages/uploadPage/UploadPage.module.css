@@ -1,8 +1,0 @@
-.fileUploadContent {
-   width: 100vw;
-   display: flex;
-   justify-content: center;
-}
-.fileUploadContent > div {
-   width: 80vw;
-}
