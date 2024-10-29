@@ -1,4 +1,11 @@
+.fileUploadContainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* Ensures equal space for both children */
+   width: 100%;
+}
+
 .dropZone {
+   grid-column: 1; /* Ensures dropZone is in the first column */
    display: flex;
    width: 20rem;
    height: 20rem;
@@ -9,6 +16,14 @@
    text-align: center;
 }
 
+.fileDetailContainer {
+   grid-column: 2;
+   justify-self: end;
+}
+
+.fileDetailContainer > h3 {
+   width: 25rem;
+}
 .fileDetails {
    height: auto;
    display: grid;
