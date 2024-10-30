@@ -2,6 +2,7 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { MultipleSelect } from "../../components/multipleSelect/MultipleSelect";
 import { RadioButtonSelect } from "../../components/radiobutton/Radiobutton";
 import { Search } from "../../components/searchbar/Search";
+import { SurveyTab } from "../../components/surveyTab/SurveyTab";
 
 export function Homepage() {
    return (
@@ -28,6 +29,12 @@ export function Homepage() {
          </RadioButtonSelect>
 
          <Search/>
+
+         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
+         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
+         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
+         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
+         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
       </>
    );
 }

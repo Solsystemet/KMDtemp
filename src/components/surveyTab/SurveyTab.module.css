@@ -1,0 +1,19 @@
+.surveyTab {
+    position: relative;
+    background-color: lightgray;
+    height: auto;
+    font-size: small;
+    outline: 2px solid black; /* Added outline */
+}
+
+.surveyTabInfo {
+    margin-bottom: 0rem;
+}
+
+.date {
+    position: absolute;
+    top: 0.2rem;
+    right: 0rem;
+    margin: 0.25rem;
+    font-size: small;
+}
