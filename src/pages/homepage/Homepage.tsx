@@ -15,26 +15,12 @@ export function Homepage() {
             ]}
          />
 
-         <MultipleSelect>
-            {"Option 1"}
-            {"Option 2"}
-            {"Option 3"}
-            {"Option 4"}
-         </MultipleSelect>
+         <SurveyTab children={[
+            { date: new Date(), company: "Company 1", projectName: "Project 1", dataProcessor: "Processor 1" },
+            { date: new Date(), company: "Company 2", projectName: "Project 2", dataProcessor: "Processor 2" },
+            { date: new Date(), company: "Company 3", projectName: "Project 3", dataProcessor: "Processor 3" },
+            { date: new Date(), company: "Company 4", projectName: "Project 4", dataProcessor: "Processor 4" },
+         ]}/>
 
-         <RadioButtonSelect>
-            {"Option 1"}
-            {"Option 2"}
-            {"Option 3"}
-         </RadioButtonSelect>
-
-         <Search/>
-
-         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
-         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
-         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
-         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
-         <SurveyTab date={new Date()} company={"Company"} projectName={"Project Name"} dataProcessor={"Data responsible"}/>
       </>
-   );
-}
+)};
